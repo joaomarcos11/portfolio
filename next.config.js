@@ -1,3 +1,10 @@
-module.exports = {
-  reactStrictMode: true,
-}
+const withImages = require('next-images');
+module.exports = withImages({
+    esModule: true,
+    webpack(config, options) {
+        return config;
+    },
+});
+// module.exports = {
+//     reactStrictMode: true,
+// };
