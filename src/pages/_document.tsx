@@ -42,6 +42,7 @@ export default class MyDocument extends Document {
         return (
             <Html lang="pt">
                 <Head>
+                    {/* Colocar tags de SEO aqui */}
                     <meta charSet="utf-8" />
 
                     <link rel="preconnect" href="https://fonts.gstatic.com" />
