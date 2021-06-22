@@ -1,0 +1,24 @@
+import React from 'react';
+import Link from 'next/link';
+
+// Deixar aqui, ou mover dados pra index
+
+import data from '../../data.json';
+
+const PagesMenu: React.FC = () => {
+    const { pagesMenuNav } = data;
+
+    return (
+        <>
+            {pagesMenuNav.map(({ id, name, page }) => (
+                <li key={id}>
+                    <Link href={`/${page}`}>
+                        <a>{name}</a>
+                    </Link>
+                </li>
+            ))}
+        </>
+    );
+};
+
+export default PagesMenu;

@@ -3,13 +3,54 @@
         "name": "João Marcos Lucena Fonseca",
         "role": "Desenvolvedor Front-End"
     },
+    "pagesMenuNav": [
+        {
+            "id": 1,
+            "name": "home",
+            "page": ""
+        },
+        {
+            "id": 2,
+            "name": "projetos",
+            "page": "projects"
+        },
+        {
+            "id": 3,
+            "name": "experiência",
+            "page": "experience"
+        },
+        {
+            "id": 4,
+            "name": "habilidades",
+            "page": "skills"
+        },
+        {
+            "id": 5,
+            "name": "formação",
+            "page": "academic"
+        }
+    ],
     "socialLinks": {
-        "github": "https://github.com/joaomarcos11",
-        "linkedin": "https://www.linkedin.com/in/joaomarcos11/"
-    },
-    "contact": {
-        "email": "joaomarcos11.tech@gmail.com",
-        "whatsapp": "https://web.whatsapp.com/send?phone=5583999720672"
+        "github": {
+            "id": 1,
+            "name": "github",
+            "link": "https://github.com/joaomarcos11"
+        },
+        "linkedin": {
+            "id": 2,
+            "name": "linkedin",
+            "link": "https://www.linkedin.com/in/joaomarcos11/"
+        },
+        "whatsapp": {
+            "id": 3,
+            "name": "whatsapp",
+            "link": "https://web.whatsapp.com/send?phone=5583999720672"
+        },
+        "email": {
+            "id": 4,
+            "name": "email",
+            "link": "joaomarcos11.tech@gmail.com"
+        }
     },
     "projetcs": [],
     "skills": [],

@@ -11,11 +11,9 @@ import data from '../../data.json';
 import { title } from 'process';
 
 const PresentationCard: React.FC = () => {
-    const { personInfo, socialLinks, contact } = data;
-
+    const { personInfo, socialLinks } = data;
     const { name, role } = personInfo;
-    const { github, linkedin } = socialLinks;
-    const { email, whatsapp } = contact;
+    const { github, linkedin, email, whatsapp } = socialLinks;
 
     return (
         <CardContainer>
@@ -29,22 +27,22 @@ const PresentationCard: React.FC = () => {
             <div className="card-social">
                 <ul>
                     <li>
-                        <a href={email} target="_blank">
+                        <a href={email.link} target="_blank">
                             <AiOutlineMail />
                         </a>
                     </li>
                     <li>
-                        <a href={linkedin} target="_blank">
+                        <a href={linkedin.link} target="_blank">
                             <AiOutlineLinkedin />
                         </a>
                     </li>
                     <li>
-                        <a href={github} target="_blank">
+                        <a href={github.link} target="_blank">
                             <AiOutlineGithub />
                         </a>
                     </li>
                     <li>
-                        <a href={whatsapp} target="_blank">
+                        <a href={whatsapp.link} target="_blank">
                             <AiOutlineWhatsApp />
                         </a>
                     </li>

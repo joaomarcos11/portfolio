@@ -1,7 +1,13 @@
 import React from 'react';
 import Head from 'next/head';
-import { Container } from '../styles/pages/Home';
+import Link from 'next/link';
 import PresentationCard from '../components/PresentationCard';
+import { ContainerWrapper } from '../styles/components/ContainerWrapper';
+import { ContainerMain } from '../styles/components/ContainerMain';
+import { ContainerSection } from '../styles/components/ContainerSection';
+import { PageHome } from '../styles/pages/Home';
+import { PagesUl } from '../styles/components/MenuNav';
+import PagesMenu from '../components/PagesMenu';
 
 // import fotoPerfil from '../assets/foto2.jpg';
 
@@ -11,18 +17,29 @@ import PresentationCard from '../components/PresentationCard';
 
 const Home: React.FC = () => {
     return (
-        <Container>
+        <>
             <Head>
                 <title>Portifólio</title>
             </Head>
+            <ContainerWrapper>
+                <ContainerMain>
+                    <PresentationCard />
 
-            <main>
-                <PresentationCard />
+                    <ContainerSection>
+                        <div className="sectionHead">
+                            <h1 className="sectionTitle">Home</h1>
+                            <nav>
+                                <ul className="sectionNav">
+                                    <PagesMenu />
+                                </ul>
+                            </nav>
+                        </div>
 
-                <section></section>
-                <h1>Hello World</h1>
-            </main>
-        </Container>
+                        <PageHome></PageHome>
+                    </ContainerSection>
+                </ContainerMain>
+            </ContainerWrapper>
+        </>
     );
 };
 
