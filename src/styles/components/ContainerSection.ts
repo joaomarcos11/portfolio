@@ -2,8 +2,11 @@ import styled from 'styled-components';
 
 export const ContainerSection = styled.section`
     height: 80vh;
-    width: 40%;
+    width: 50%;
+    overflow-y: scroll;
     background-color: ${props => props.theme.dark.secondary};
+    padding: 10px 30px;
+    border: 1px solid white;
 
     .sectionHead {
         display: flex;

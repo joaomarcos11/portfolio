@@ -1,8 +1,19 @@
 {
     "personInfo": {
         "name": "João Marcos Lucena Fonseca",
-        "role": "Desenvolvedor Front-End"
+        "role": "Desenvolvedor Front-End",
+        "email": "joaomarcos11.tech@gmail.com",
+        "dateBirth": "11/11/1992",
+        "address": "João Pessoa, Paraíba"
     },
+    "personCharacteristics": [
+        "Desenvolvedor",
+        "Professor",
+        "Escritor",
+        "Empreendedor",
+        "Palestrante",
+        "Eterno Estudante"
+    ],
     "pagesMenuNav": [
         {
             "id": 1,
