@@ -3,6 +3,7 @@ import { createGlobalStyle } from 'styled-components';
 export default createGlobalStyle`
     :root {
         font-size: 62.5%;
+        /* font-size: 100%; */
     }
     * {
         margin: 0;

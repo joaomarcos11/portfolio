@@ -42,4 +42,39 @@ export const ContainerSection = styled.section`
             }
         }
     }
+
+    // Classes extras no Timeline
+    .containerTimeline {
+        margin-top: 4rem;
+        /* width: 80%; */
+    }
+    .containerElementTimeline {
+        color: ${props => props.theme.dark.text};
+    }
+
+    .timelineTitle,
+    .timelineSubtitle,
+    .timelineDescription,
+    .containerTimelineDate {
+        color: ${props => props.theme.dark.text};
+    }
+
+    .timelineTitle {
+        font-size: 2.4rem;
+    }
+
+    .timelineSubtitle {
+        margin-top: 1rem;
+        font-size: 2rem;
+    }
+
+    .timelineDescription {
+        font-size: 1.6rem;
+    }
+
+    .containerTimelineDate {
+        margin: 0 2rem;
+        font-size: 1.6rem !important;
+        opacity: 0.9;
+    }
 `;
