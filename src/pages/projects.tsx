@@ -17,19 +17,21 @@ const Home: React.FC = () => {
                 <ContainerMain>
                     <PresentationCard />
 
-                    <ContainerSection>
-                        <div className="sectionHead">
-                            <h1 className="sectionTitle">Projetos</h1>
+                    <div className="sectionPage">
+                        <header className="sectionHead">
                             <nav>
                                 <ul className="sectionNav">
                                     {/* Passar qual tab está ativa no momento */}
                                     <PagesMenu />
                                 </ul>
                             </nav>
-                        </div>
+                            <h1 className="sectionTitle">Projetos</h1>
+                        </header>
 
-                        <PageProjects></PageProjects>
-                    </ContainerSection>
+                        <ContainerSection>
+                            <PageProjects></PageProjects>
+                        </ContainerSection>
+                    </div>
                 </ContainerMain>
             </ContainerWrapper>
         </>

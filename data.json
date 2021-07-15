@@ -64,7 +64,64 @@
         }
     },
     "projetcs": [],
-    "skills": [],
-    "profissionalExp": [],
-    "academicExp": []
+    "skills": {
+        "hard": {
+            "languages": ["C#", "JavaScript"],
+            "backend": [".NET", "Node.js"],
+            "frontend": ["ReactJS", "NextJS"],
+            "mobile": ["React Native"],
+            "database": ["PostegreSQL", "SQL-Server", "MongoDB"],
+            "test": [],
+            "tools": ["Git"],
+            "os": ["Windows", "Linux"]
+        },
+        "soft": []
+    },
+    "profissionalExp": [
+        {
+            "id": 1,
+            "period": "12/2020 - Presente",
+            "company": "SMN Tecnologia da Informação",
+            "role": "Desenvolvedor Web",
+            "description": "Creative Direction, User Experience, Visual Design, Project Management, Team Leading",
+            "active": true
+        },
+        {
+            "id": 2,
+            "period": "08/2019 - 11/2020",
+            "company": "UBTech - Fábrica de Software",
+            "role": "Desenvolvedor Web",
+            "description": "Creative Direction, User Experience, Visual Design, Project Management, Team Leading",
+            "active": false
+        }
+    ],
+    "academicExp": [
+        {
+            "id": 1,
+            "period": "2019 - 2020",
+            "college": "UNIPÊ - Centro Universitário Pessoense",
+            "course": "Sistemas para internet",
+            "description": "Creative Direction, User Experience, Visual Design, Project Management, Team Leading",
+            "postgraduate": false,
+            "active": false
+        },
+        {
+            "id": 2,
+            "period": "2014 - 2015",
+            "college": "AIT - Athlone Institute of Technology",
+            "course": "Civil Engineering",
+            "description": "Creative Direction, User Experience, Visual Design, Project Management, Team Leading",
+            "postgraduate": false,
+            "active": false
+        },
+        {
+            "id": 3,
+            "period": "2011 - 2014 | 2015 - 2018",
+            "college": "UFPB - Universidade Federal da Paraíba",
+            "course": "Engenharia Civil",
+            "description": "Creative Direction, User Experience, Visual Design, Project Management, Team Leading",
+            "postgraduate": false,
+            "active": false
+        }
+    ]
 }
