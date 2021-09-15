@@ -17,7 +17,7 @@ import {
 import 'react-vertical-timeline-component/style.min.css';
 import { FaReact } from 'react-icons/fa';
 
-import data from '../../data.json';
+import data from '../service/data.json';
 
 const Home: React.FC = () => {
     const { academicExp } = data;

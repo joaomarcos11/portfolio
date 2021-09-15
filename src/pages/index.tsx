@@ -8,7 +8,7 @@ import { ContainerMain } from '../styles/components/ContainerMain';
 import { ContainerSection } from '../styles/components/ContainerSection';
 import { PageHome } from '../styles/pages/Home';
 
-import data from '../../data.json';
+import data from '../service/data.json';
 import { HorizontalRow } from '../styles/components/HorizontalRow';
 
 // import fotoPerfil from '../assets/foto2.jpg';

@@ -45,4 +45,8 @@ export const ContainerSection = styled.section`
         font-size: 1.6rem !important;
         opacity: 0.9;
     }
+
+    ul {
+        list-style: none;
+    }
 `;

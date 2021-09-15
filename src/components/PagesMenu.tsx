@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 // Deixar aqui, ou mover dados pra index
 
-import data from '../../data.json';
+import data from '../service/data.json';
 
 const PagesMenu: React.FC = () => {
     const { pagesMenuNav } = data;

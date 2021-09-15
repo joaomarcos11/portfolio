@@ -7,8 +7,7 @@ import {
     AiOutlineWhatsApp,
 } from 'react-icons/ai';
 
-import data from '../../data.json';
-import { title } from 'process';
+import data from '../service/data.json';
 
 const PresentationCard: React.FC = () => {
     const { personInfo, socialLinks } = data;

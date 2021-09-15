@@ -63,7 +63,62 @@
             "link": "joaomarcos11.tech@gmail.com"
         }
     },
-    "projetcs": [],
+    "projects": [
+        {
+            "id": 1,
+            "period": "12/2020 - Presente",
+            "title": "Arpyia",
+            "company": "SMN Tecnologia da Informação",
+            "role": "Desenvolvedor Web",
+            "description": "Creative Direction, User Experience, Visual Design, Project Management, Team Leading",
+            "active": false
+        },
+        {
+            "id": 2,
+            "period": "12/2020 - Presente",
+            "title": "NaBR - Tudo para sua moto",
+            "company": "SMN Tecnologia da Informação",
+            "role": "Desenvolvedor Web",
+            "description": "Creative Direction, User Experience, Visual Design, Project Management, Team Leading",
+            "active": false
+        },
+        {
+            "id": 3,
+            "period": "12/2020 - Presente",
+            "title": "Cidadania Ativa",
+            "company": "UBTech Fábrica de Software",
+            "role": "Desenvolvedor Mobile",
+            "description": "Creative Direction, User Experience, Visual Design, Project Management, Team Leading",
+            "active": false
+        },
+        {
+            "id": 4,
+            "period": "12/2020 - Presente",
+            "title": "EasyCajup",
+            "company": "UBTech Fábrica de Software",
+            "role": "Desenvolvedor Front-End",
+            "description": "Creative Direction, User Experience, Visual Design, Project Management, Team Leading",
+            "active": false
+        },
+        {
+            "id": 5,
+            "period": "12/2020 - Presente",
+            "title": "PMPB - Sistema de reconhecimento facial",
+            "company": "UBTech Fábrica de Software",
+            "role": "Gerente de Projetos",
+            "description": "Creative Direction, User Experience, Visual Design, Project Management, Team Leading",
+            "active": false
+        },
+        {
+            "id": 6,
+            "period": "12/2020 - Presente",
+            "title": "Sistema de gerenciamento de eventos",
+            "company": "UBTech Fábrica de Software",
+            "role": "Gerente de Projetos",
+            "description": "Creative Direction, User Experience, Visual Design, Project Management, Team Leading",
+            "active": false
+        }
+    ],
     "skills": {
         "hard": {
             "languages": ["C#", "JavaScript"],
@@ -75,7 +130,14 @@
             "tools": ["Git"],
             "os": ["Windows", "Linux"]
         },
-        "soft": []
+        "soft": [
+            "Desenvolvedor",
+            "Professor",
+            "Escritor",
+            "Empreendedor",
+            "Palestrante",
+            "Eterno Estudante"
+        ]
     },
     "profissionalExp": [
         {

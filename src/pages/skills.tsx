@@ -8,8 +8,9 @@ import { PageSkills } from '../styles/pages/Skills';
 import PagesMenu from '../components/PagesMenu';
 import { AiOutlineMail } from 'react-icons/ai';
 
-import data from '../../data.json';
+import data from '../service/data.json';
 import SkillCard from '../components/SkillCard';
+import { HorizontalRow } from '../styles/components/HorizontalRow';
 
 const Home: React.FC = () => {
     const { skills } = data;
@@ -41,55 +42,74 @@ const Home: React.FC = () => {
                             <PageSkills>
                                 <section>
                                     <h3>Hard Skills</h3>
-                                    <ul>
-                                        {languages.length > 0 && (
+                                    <ul className="hardskills-list">
+                                        {languages.length && (
                                             <SkillCard
                                                 iconName={AiOutlineMail}
                                                 hardskill={languages}
+                                                title={'Linguagens:'}
                                             />
                                         )}
-                                        {backend.length > 0 && (
+                                        {backend.length && (
                                             <SkillCard
                                                 iconName={AiOutlineMail}
                                                 hardskill={backend}
+                                                title={'Back-End:'}
                                             />
                                         )}
-                                        {frontend.length > 0 && (
+                                        {frontend.length && (
                                             <SkillCard
                                                 iconName={AiOutlineMail}
                                                 hardskill={frontend}
+                                                title={'Front-End:'}
                                             />
                                         )}
-                                        {mobile.length > 0 && (
+                                        {mobile.length && (
                                             <SkillCard
                                                 iconName={AiOutlineMail}
                                                 hardskill={mobile}
+                                                title={'Mobile:'}
                                             />
                                         )}
-                                        {database.length > 0 && (
+                                        {database.length && (
                                             <SkillCard
                                                 iconName={AiOutlineMail}
                                                 hardskill={database}
+                                                title={'BD:'}
                                             />
                                         )}
-                                        {test.length > 0 && (
+                                        {test.length && (
                                             <SkillCard
                                                 iconName={AiOutlineMail}
                                                 hardskill={test}
+                                                title={'Teste:'}
                                             />
                                         )}
-                                        {tools.length > 0 && (
+                                        {tools.length && (
                                             <SkillCard
                                                 iconName={AiOutlineMail}
                                                 hardskill={tools}
+                                                title={'Ferramentas:'}
                                             />
                                         )}
-                                        {os.length > 0 && (
+                                        {os.length && (
                                             <SkillCard
                                                 iconName={AiOutlineMail}
                                                 hardskill={os}
+                                                title={'SO:'}
                                             />
                                         )}
+                                    </ul>
+                                </section>
+
+                                <HorizontalRow />
+
+                                <section>
+                                    <h3>Soft Skills</h3>
+                                    <ul className="softskills-list">
+                                        {soft.map(item => (
+                                            <li>{item}</li>
+                                        ))}
                                     </ul>
                                 </section>
                             </PageSkills>
