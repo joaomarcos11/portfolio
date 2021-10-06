@@ -26,11 +26,6 @@ const PresentationCard: React.FC = () => {
             <div className="card-social">
                 <ul>
                     <li>
-                        <a href={email.link} target="_blank">
-                            <AiOutlineMail />
-                        </a>
-                    </li>
-                    <li>
                         <a href={linkedin.link} target="_blank">
                             <AiOutlineLinkedin />
                         </a>

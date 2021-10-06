@@ -17,7 +17,7 @@ export const ContainerMain = styled.main`
         position: relative;
         top: -4rem;
 
-        .sectionHead {
+        .sectionHeader {
             display: flex;
             flex-direction: column;
             align-items: flex-end;
@@ -27,13 +27,12 @@ export const ContainerMain = styled.main`
                 display: none;
             }
 
-            .sectionNav {
+            .navHeader {
                 list-style: none;
                 display: flex;
                 justify-content: space-evenly;
                 align-items: center;
 
-                /* border: 1px solid white; */
                 height: 4rem;
 
                 li {

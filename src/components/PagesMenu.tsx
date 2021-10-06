@@ -1,11 +1,12 @@
 import React from 'react';
 import Link from 'next/link';
+import { NavIcon } from '../types';
 
 // Deixar aqui, ou mover dados pra index
 
-import data from '../service/data.json';
+// import data from '../service/data.json';
 
-const PagesMenu: React.FC = () => {
+const PagesMenu = ({ navItem }: NavIcon ) => {
     const { pagesMenuNav } = data;
 
     return (
