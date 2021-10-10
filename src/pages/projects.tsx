@@ -3,9 +3,7 @@ import Head from 'next/head';
 import PresentationCard from '../components/PresentationCard';
 import PagesMenu from '../components/PagesMenu';
 
-import { ContainerWrapper } from '../styles/components/ContainerWrapper';
-import { ContainerMain } from '../styles/components/ContainerMain';
-import { ContainerSection } from '../styles/components/ContainerSection';
+import { ContainerWrapper, ContainerMain, ContainerSection } from '../styles/components/Container';
 import { PageProjects } from '../styles/pages/Projects';
 import theme from '../styles/theme';
 
@@ -17,6 +15,7 @@ import 'react-vertical-timeline-component/style.min.css';
 import { FaReact } from 'react-icons/fa';
 
 import data from '../service/data.json';
+import SideMenu from '../components/SideMenu';
 
 const Home: React.FC = () => {
     const { projects } = data;
@@ -31,18 +30,6 @@ const Home: React.FC = () => {
                     <PresentationCard />
 
                     <div className="sectionPage">
-                        <header className="sectionHead">
-                            <nav>
-                                <ul className="sectionNav">
-                                    {/* Passar qual tab está ativa no momento */}
-                                    <PagesMenu />
-                                </ul>
-                            </nav>
-                            <h1 className="sectionTitle">
-                                Projetos - Portifólio
-                            </h1>
-                        </header>
-
                         <ContainerSection>
                             <h2>Projetos</h2>
                             <PageProjects>
@@ -98,6 +85,7 @@ const Home: React.FC = () => {
                                 </VerticalTimeline>
                             </PageProjects>
                         </ContainerSection>
+                        <SideMenu navItems={navItems} />
                     </div>
                 </ContainerMain>
             </ContainerWrapper>

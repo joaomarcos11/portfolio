@@ -1,12 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import Head from 'next/head';
 import PresentationCard from '../components/PresentationCard';
-import PagesMenu from '../components/PagesMenu';
+import SideMenu from '../components/SideMenu';
 
-import { ContainerWrapper } from '../styles/components/ContainerWrapper';
-import { ContainerMain } from '../styles/components/ContainerMain';
-import { ContainerSide } from '../styles/components/ContainerSide';
-import { ContainerSection } from '../styles/components/ContainerSection';
+import { ContainerWrapper, ContainerMain, ContainerSection } from '../styles/components/Container';
 import { PageHome } from '../styles/pages/Home';
 
 import data from '../service/data.json';
@@ -90,7 +87,7 @@ const Home = () => {
                                     { isLanguagePt ? 'Currículo' : 'Curriculum' }
                                 </li>
                                 <li>
-                                    { isLanguagePt ? 'View in english' : 'Ver em português' }
+                                    { isLanguagePt ? 'English' : 'Português' }
                                 </li>
                             </nav>
                             <h1 className="sectionTitle">Home</h1>
@@ -224,23 +221,10 @@ const Home = () => {
                                     </div>
                                 </PageHome>
                             </ContainerSection>
-                            <ContainerSide>
-                                <nav className="navSide">
-                                    <ul>
-                                        {/* Passar qual tab está ativa no momento */}
-                                        {navItems.map(({ id, name, namePt, page, IconName }) => (
-                                            <li key={id}>
-                                                <Link href={`/${page}`}>
-                                                    <a>{ <IconName />  }</a>
-                                                </Link>
-                                                {/* <span>{ isLanguagePt ? namePt : name }</span> */}
-                                            </li>
-                                        ))}
-                                    </ul>
-                                </nav>
-                            </ContainerSide>
                         </div>
                     </div>
+
+                    <SideMenu navItems={navItems} />
                 </ContainerMain>
             </ContainerWrapper>
         </>

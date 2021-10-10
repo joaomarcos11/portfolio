@@ -9,7 +9,7 @@ import {
 
 import data from '../service/data.json';
 
-const PresentationCard: React.FC = () => {
+const PresentationCard = () => {
     const { personInfo, socialLinks } = data;
     const { name, role } = personInfo;
     const { github, linkedin, email, whatsapp } = socialLinks;

@@ -4,9 +4,7 @@ import Head from 'next/head';
 import PresentationCard from '../components/PresentationCard';
 import PagesMenu from '../components/PagesMenu';
 
-import { ContainerWrapper } from '../styles/components/ContainerWrapper';
-import { ContainerMain } from '../styles/components/ContainerMain';
-import { ContainerSection } from '../styles/components/ContainerSection';
+import { ContainerWrapper, ContainerMain, ContainerSection } from '../styles/components/Container';
 import { PageAcademic } from '../styles/pages/Academic';
 import theme from '../styles/theme';
 
