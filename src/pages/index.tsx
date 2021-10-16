@@ -12,6 +12,7 @@ import { HorizontalRow } from '../styles/components/HorizontalRow';
 import { AiOutlineHome, AiOutlineProject, AiOutlineRead, AiOutlineRocket, AiOutlineTool } from 'react-icons/ai';
 import { NavIcon } from '../types';
 import Link from 'next/link';
+import { useDataContext } from '../context/auth';
 
 // import fotoPerfil from '../assets/foto2.jpg';
 
@@ -19,51 +20,11 @@ import Link from 'next/link';
 // page => Home
 //
 
-const darkNavIcons = {
-    home: AiOutlineHome,
-    projects: AiOutlineProject,
-    experience: AiOutlineRocket,
-    skills: AiOutlineTool,
-    graduation: AiOutlineRead
-};
-
-const lightNavIcons = {
-    home: AiOutlineHome,
-    projects: AiOutlineProject,
-    experience: AiOutlineRocket,
-    skills: AiOutlineTool,
-    graduation: AiOutlineRead
-};
-
 // quero importar aqui o data, e passar como props os dados para PagesMenu
 // criar estado, pois caso altere light/dark ou pt/en deve mudar os atributos
 
 const Home = () => {
-    const [isThemeDark, setIsThemeDark] = useState(true);
-    const [isLanguagePt, setIsLanguagePt] = useState(true);
-    const [navItems, setNavItems] = useState<NavIcon[]>([]);
-
-    useEffect(() => {
-        if (isThemeDark) {
-            let darkNavItems = data.pagesMenuNav.map(navItem => {
-                return {
-                    ...navItem,
-                    IconName: darkNavIcons[navItem.name]
-                }
-            });
-            setNavItems(darkNavItems);
-        }
-        else {
-            let lightNavItems = data.pagesMenuNav.map(navItem => {
-                return {
-                    ...navItem,
-                    IconName: lightNavIcons[navItem.name]
-                }
-            });
-            setNavItems(lightNavItems);
-        }
-
-    }, [isThemeDark]);
+    const { navItems } = useDataContext();
 
     const { personInfo, personCharacteristics } = data;
     const { name, role, email, dateBirth, address } = personInfo;
@@ -81,13 +42,16 @@ const Home = () => {
                         <header className="sectionHeader">
                             <nav className="navHeader">
                                 <li>
-                                    { isLanguagePt ? 'Contato' : 'Contact' }
+                                   Contato
+                                    {/* { isLanguagePt ? 'Contato' : 'Contact' } */}
                                 </li>
                                 <li>
-                                    { isLanguagePt ? 'Currículo' : 'Curriculum' }
+                                    Currículo
+                                    {/* { isLanguagePt ? 'Currículo' : 'Curriculum' } */}
                                 </li>
                                 <li>
-                                    { isLanguagePt ? 'English' : 'Português' }
+                                    English
+                                    {/* { isLanguagePt ? 'English' : 'Português' } */}
                                 </li>
                             </nav>
                             <h1 className="sectionTitle">Home</h1>
