@@ -1,7 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 import { NavIcon } from '../types';
-import { LinkItem, LinkIcon } from '../styles/components/LinkIcon';
+import { LinkItem, LinkIcon } from './styles';
 import { AiFillBulb, AiOutlineBulb } from 'react-icons/ai';
 
 const SideMenu = ({ navItems }: NavIcon[]) => {

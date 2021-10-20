@@ -4,18 +4,21 @@ import PresentationCard from '../components/PresentationCard';
 
 import { ContainerWrapper, ContainerMain, ContainerSection } from '../styles/components/Container';
 import { PageSkills } from '../styles/pages/Skills';
-import PagesMenu from '../components/PagesMenu';
 import { AiOutlineMail } from 'react-icons/ai';
 
 import data from '../service/data.json';
 import SkillCard from '../components/SkillCard';
 import { HorizontalRow } from '../styles/components/HorizontalRow';
+import NavHeader from '../components/NavHeader';
+import { useDataContext } from '../context/auth';
+import SideMenu from '../components/SideMenu';
 
-const Home: React.FC = () => {
+const Skills = () => {
     const { skills } = data;
     const { hard, soft } = skills;
-    const { languages, backend, frontend, mobile, database, test, tools, os } =
-        hard;
+    const { languages, backend, frontend, mobile, database, test, tools, os } = hard;
+
+    const { navItems } = useDataContext();
 
     return (
         <>
@@ -27,15 +30,13 @@ const Home: React.FC = () => {
                     <PresentationCard />
 
                     <div className="sectionPage">
-                        <header className="sectionHead">
-                            <nav>
-                                <ul className="sectionNav">
-                                    {/* Passar qual tab está ativa no momento */}
-                                    <PagesMenu />
-                                </ul>
-                            </nav>
-                            <h1 className="sectionTitle">Habilidades</h1>
+                        <header className="sectionHeader">
+                            <NavHeader />
+                            <h1 className="sectionTitle">
+                                Habilidades
+                            </h1>
                         </header>
+
                         <ContainerSection>
                             <h2>Habilidades</h2>
                             <PageSkills>
@@ -114,10 +115,12 @@ const Home: React.FC = () => {
                             </PageSkills>
                         </ContainerSection>
                     </div>
+
+                    <SideMenu navItems={navItems} />
                 </ContainerMain>
             </ContainerWrapper>
         </>
     );
 };
 
-export default Home;
+export default Skills;

@@ -1,7 +1,7 @@
 import React from 'react';
 import { IconType } from 'react-icons';
 import { AiOutlineMail } from 'react-icons/ai';
-import { SkillLi } from '../styles/components/SkillLi';
+import { SkillLi } from './styles';
 
 interface SkillCardProps {
     hardskill: string[];

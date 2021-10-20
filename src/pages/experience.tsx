@@ -2,7 +2,6 @@ import React from 'react';
 import Head from 'next/head';
 
 import PresentationCard from '../components/PresentationCard';
-import PagesMenu from '../components/PagesMenu';
 
 import { ContainerWrapper, ContainerMain, ContainerSection } from '../styles/components/Container';
 import { PageExperience } from '../styles/pages/Experience';
@@ -16,9 +15,13 @@ import 'react-vertical-timeline-component/style.min.css';
 import { FaReact } from 'react-icons/fa';
 
 import data from '../service/data.json';
+import NavHeader from '../components/NavHeader';
+import SideMenu from '../components/SideMenu';
+import { useDataContext } from '../context/auth';
 
-const Home: React.FC = () => {
+const Experience = () => {
     const { profissionalExp } = data;
+    const { navItems } = useDataContext();
 
     return (
         <>
@@ -30,15 +33,10 @@ const Home: React.FC = () => {
                     <PresentationCard />
 
                     <div className="sectionPage">
-                        <header className="sectionHead">
-                            <nav>
-                                <ul className="sectionNav">
-                                    {/* Passar qual tab está ativa no momento */}
-                                    <PagesMenu />
-                                </ul>
-                            </nav>
+                        <header className="sectionHeader">
+                            <NavHeader />
                             <h1 className="sectionTitle">
-                                Experiência Profissional
+                                Experiência
                             </h1>
                         </header>
 
@@ -99,10 +97,12 @@ const Home: React.FC = () => {
                             </PageExperience>
                         </ContainerSection>
                     </div>
+
+                    <SideMenu navItems={navItems} />
                 </ContainerMain>
             </ContainerWrapper>
         </>
     );
 };
 
-export default Home;
+export default Experience;

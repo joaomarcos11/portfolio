@@ -1,7 +1,6 @@
 import React from 'react';
 import Head from 'next/head';
 import PresentationCard from '../components/PresentationCard';
-import PagesMenu from '../components/PagesMenu';
 
 import { ContainerWrapper, ContainerMain, ContainerSection } from '../styles/components/Container';
 import { PageProjects } from '../styles/pages/Projects';
@@ -16,9 +15,12 @@ import { FaReact } from 'react-icons/fa';
 
 import data from '../service/data.json';
 import SideMenu from '../components/SideMenu';
+import { useDataContext } from '../context/auth';
+import NavHeader from '../components/NavHeader';
 
-const Home: React.FC = () => {
+const Projects = () => {
     const { projects } = data;
+    const { navItems } = useDataContext();
 
     return (
         <>
@@ -30,6 +32,13 @@ const Home: React.FC = () => {
                     <PresentationCard />
 
                     <div className="sectionPage">
+                        <header className="sectionHeader">
+                            <NavHeader />
+                            <h1 className="sectionTitle">
+                                Projetos
+                            </h1>
+                        </header>
+
                         <ContainerSection>
                             <h2>Projetos</h2>
                             <PageProjects>
@@ -85,12 +94,13 @@ const Home: React.FC = () => {
                                 </VerticalTimeline>
                             </PageProjects>
                         </ContainerSection>
-                        <SideMenu navItems={navItems} />
                     </div>
+
+                    <SideMenu navItems={navItems} />
                 </ContainerMain>
             </ContainerWrapper>
         </>
     );
 };
 
-export default Home;
+export default Projects;

@@ -1,5 +1,5 @@
 import React from 'react';
-import { CardContainer } from '../styles/components/PresentationCard';
+import { CardContainer } from './styles';
 import {
     AiOutlineMail,
     AiOutlineGithub,
@@ -7,7 +7,7 @@ import {
     AiOutlineWhatsApp,
 } from 'react-icons/ai';
 
-import data from '../service/data.json';
+import data from '../../service/data.json';
 
 const PresentationCard = () => {
     const { personInfo, socialLinks } = data;

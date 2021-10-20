@@ -35,31 +35,6 @@ export const ContainerMain = styled.main`
             .sectionTitle {
                 display: none;
             }
-
-            .navHeader {
-                list-style: none;
-                display: flex;
-                justify-content: space-evenly;
-                align-items: center;
-
-                height: 4rem;
-
-                li {
-                    a {
-                        padding: 1rem 1.5rem;
-                        color: ${props => props.theme.dark.text};
-                        text-decoration: none;
-                        text-transform: uppercase;
-                        font-size: 1.4rem;
-                        letter-spacing: 0.6px;
-                        transition: 0.3s all;
-
-                        &:hover {
-                            color: ${props => props.theme.dark.primary};
-                        }
-                    }
-                }
-            }
         }
     }
 `;
@@ -67,6 +42,7 @@ export const ContainerMain = styled.main`
 // Características em comum de todos os Containers
 // Cada componente dentro dele terá suas características em particular
 export const ContainerSection = styled.section`
+    display: flex;
     height: 80vh;
     width: 100%;
     overflow-y: scroll;
